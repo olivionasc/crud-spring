@@ -1,0 +1,11 @@
+{
+    "java.compile.nullAnalysis.mode": "disabled",
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.completion.enabled": true,
+    "java.completion.importOrder": ["java", "javax", "org", "com"],
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit",
+        "source.addMissingImports": "explicit"
+    },
+"files.autoSave": "afterDelay"
+}
