@@ -22,7 +22,7 @@ function Home(){
                 navigate("/login");
             }
 
-            const response = await fetch("http://localhost:8080/api/usuarios", {
+            const response = await fetch("https://crud-spring-szh4.onrender.com/api/usuarios", {
                 method: "GET",
                 headers: {
                     "Authorization": `Bearer ${token}`
@@ -71,7 +71,7 @@ function Home(){
         }
 
         const response = await fetch(
-            `http://localhost:8080/api/usuarios/${usuarioSelecionado.id}`,
+            `https://crud-spring-szh4.onrender.com/api/usuarios/${usuarioSelecionado.id}`,
             {
                 method: "PUT",
                 headers: {
@@ -111,7 +111,7 @@ function Home(){
 
     const token = localStorage.getItem("token");
 
-    const response = await fetch("http://localhost:8080/auth/register", {
+    const response = await fetch("https://crud-spring-szh4.onrender.com/auth/register", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -141,7 +141,7 @@ async function deletar(usuarioId) {
     try {
         const token = localStorage.getItem("token");
 
-        const response = await fetch(`http://localhost:8080/api/usuarios/${usuarioId}`, {
+        const response = await fetch(`https://crud-spring-szh4.onrender.com/api/usuarios/${usuarioId}`, {
             method: "DELETE",
             headers: {
                 "Authorization": `Bearer ${token}`
